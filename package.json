@@ -1,6 +1,6 @@
 {
   "name": "mkit-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react 常用 自定义hooks",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -14,7 +14,8 @@
   "scripts": {
     "build:cjs": "tsc",
     "build:es": "tsc -m esNext --outDir esm",
-    "build": "yarn build:cjs && yarn build:es"
+    "build": "yarn build:cjs && yarn build:es",
+    "yalc-push": "yarn build:cjs && yarn build:es && yalc publish --push --replace"
   },
   "repository": {
     "type": "git",
